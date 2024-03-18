@@ -1,0 +1,22 @@
+http:
+#region routers
+  routers:
+    hello-world:
+      entryPoints:
+        - "https"
+      rule: "Host(`hello-world.your-domain.com`)"
+      middlewares:
+        - default-headers
+        - https-redirectscheme
+      tls: {}
+      service: hello-world
+#endregion
+
+#region services
+  services:
+    hello-world:
+      loadBalancer:
+        servers:
+          - url: "http://ip-address:port"
+        passHostHeader: true
+#endregion
