@@ -1,5 +1,5 @@
 http:
-#region routers
+#routers
   routers:
     hello-world:
       entryPoints:
@@ -10,13 +10,13 @@ http:
         - https-redirectscheme
       tls: {}
       service: hello-world
-#endregion
+#endrouter
 
-#region services
+#service
   services:
     hello-world:
       loadBalancer:
         servers:
           - url: "http://ip-address:port"
         passHostHeader: true
-#endregion
+#endservice
