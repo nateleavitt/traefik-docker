@@ -4,7 +4,7 @@ http:
     hello-world:
       entryPoints:
         - "https"
-      rule: "Host(`hello-world.your-domain.com`)"
+      rule: "Host(`hello-world.local.your-domain.com`)"
       middlewares:
         - default-headers
         - https-redirectscheme
