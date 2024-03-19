@@ -17,4 +17,5 @@ I would suggest to setup each service with it's own config file (yml).
 
 ### Setup
 
-
+You can follow details instructions here:
+[https://www.n8bit.io/posts/traefik-ssl/](https://www.n8bit.io/posts/traefik-ssl/)
