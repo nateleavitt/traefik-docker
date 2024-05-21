@@ -4,6 +4,9 @@ services:
   traefik:
     image: traefik:latest
     container_name: traefik
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
